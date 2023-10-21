@@ -1,0 +1,45 @@
+name: virus_total_multi
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+
+dependencies:
+  file_picker: ^6.0.0
+  flutter:
+    sdk: flutter
+  flutter_gen: ^5.3.2
+  hive: ^2.2.3
+  http: ^1.1.0
+  lottie: ^2.7.0
+  material_symbols_icons: ^4.2671.0
+
+dev_dependencies:
+  build_runner:
+  flutter_gen_runner: ^5.3.2
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_gen:
+  output: lib/gen/
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+    lottie: true
+
+  fonts:
+    enabled: false
+
+  assets:
+    outputs:
+      class_name: Assets
+      style: dot-delimiter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
